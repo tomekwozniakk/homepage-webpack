@@ -1,0 +1,35 @@
+.navigation {
+    padding: 16px;
+    display: none;
+    &--open {
+      display: block;
+    }
+    &__wrap {
+      min-height: 50px;
+      width: 100%;
+      background: royalblue;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+    }
+    &__link {
+      text-transform: uppercase;
+      color: black;
+      display: block;
+      margin-bottom: 16px;
+    }
+    &__link:hover {
+      color: white;
+      background-color: black;
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+  }

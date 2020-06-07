@@ -1,0 +1,21 @@
+.contact {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &__header {
+      color: crimson;
+      font-size: 32px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    &__option-header {
+      color: royalblue;
+      text-align: center;
+    }
+  }

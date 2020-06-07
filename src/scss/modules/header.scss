@@ -1,0 +1,38 @@
+.header {
+    &__description {
+      background: white;
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 16px;
+    }
+    &__description-header {
+      color: crimson;
+      text-align: center;
+    }
+    &__description-image {
+      border-radius: 16px;
+      max-width: 100%;
+    }
+    &__description-text {
+      padding: 20px;
+      text-align: center;
+    }
+    &__title {
+      color: crimson;
+      text-align: center;
+      margin-top: 70px;
+      position: relative;
+    }
+    &__title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      width: 40%;
+      height: 2px;
+      background: royalblue;
+    }
+  }

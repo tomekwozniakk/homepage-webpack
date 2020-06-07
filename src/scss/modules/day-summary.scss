@@ -1,0 +1,13 @@
+.day-summary {
+    text-align: left;
+    &__title {
+        color: royalblue;
+        text-align: center;
+      }
+      &__description--special, &__description--list {
+        color: crimson;
+        border: 1px solid black;
+        padding: 20px 30px;
+        border-radius: 16px;
+      }
+  }
