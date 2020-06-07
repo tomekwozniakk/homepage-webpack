@@ -31,6 +31,11 @@ a {
   }
 }
 
+.date--js {
+  text-align: right;
+  font-style: italic;
+}
+
 @media screen and (max-width: 767px) {
   .main {
     grid-template-columns: 1fr;
