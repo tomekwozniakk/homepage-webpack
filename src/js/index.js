@@ -77,4 +77,4 @@ function addDate(querySelectorContent, date){
 const element = document.querySelector(querySelectorContent);
 element.innerHTML = (`Witaj w moim dzienniku, dzisiaj jest ` + date);}
 
-addDate('.date--js', moment().locale('pl').format('LL'));
+addDate('.date--js', moment().locale('pl').format('LLLL'));
