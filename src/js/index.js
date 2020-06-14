@@ -1,6 +1,7 @@
 import '../scss/main.scss';
 
 /* place your code below */
+import moment from 'moment';
 
 console.log('HELLO 🚀')
 
@@ -70,8 +71,6 @@ hamburger.addEventListener('click', () => {
 
 
 // adding moment
-
-import moment from 'moment';
 
 function addDate(querySelectorContent, date){
 const element = document.querySelector(querySelectorContent);
