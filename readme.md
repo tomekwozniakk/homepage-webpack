@@ -2,7 +2,7 @@
 
 # Moja strona domowa 
 
-Witaj! Powyższa strona jest jednym z projektów wykonanych w czasie mojego udziału w szkoleniu **"WTF! Co ten frontend"** edycja II. Jest to także swoiste **archiwum** dokumentujące moje postępy w nauce podstaw nowoczesnego front-endu. Została zbudowana w oparciu o **webpack-starterkit** udostępniony przez prowadzącego szkolenie **Maćka Korsana**.
+Witaj! Powyższa strona jest jednym z projektów wykonanych w czasie mojego udziału w szkoleniu **"WTF! Co ten frontend"** edycja II. Jest to także swoiste **archiwum** dokumentujące moje postępy w nauce podstaw nowoczesnego front-endu. Została zbudowana w oparciu o [**webpack-starterkit**](https://github.com/maciejkorsan/wtf-webpack-starter) udostępniony przez prowadzącego szkolenie **Maćka Korsana**.
 
 ## Co zawiera strona?
 
@@ -14,13 +14,13 @@ Strona **Kontakt** zawiera moje rzeczywiste dane kontaktowe. Jeśli masz ochotę
 
 Użyj komendy `npm install` w konsoli, potem masz następujące opcje:
 
-`npm run start` - uruchamia development mode
+-`npm run start` - uruchamia development mode
 
-`npm run build` - uruchamia build process
+-`npm run build` - uruchamia build process
 
-`npm run publish` - uruchamia build process i publikuje stronę używając brancha `gh-pages`
+-`npm run publish` - uruchamia build process i publikuje stronę używając brancha `gh-pages`
 
 ## Pozdrawiam!
-## Tomasz Woźniak 
+### Tomasz Woźniak 
 
 ![cover](https://cotenfrontend.pl/img/cover.png)
