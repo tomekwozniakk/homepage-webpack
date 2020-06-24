@@ -7,7 +7,7 @@
     &__wrap {
       min-height: 50px;
       width: 100%;
-      background: royalblue;
+      background: rgba(68, 109, 233, 0.7);
       position: fixed;
       top: 0;
       z-index: 2;
@@ -17,10 +17,11 @@
       color: black;
       display: block;
       margin-bottom: 16px;
+      transition: .3s;
     }
     &__link:hover {
       color: white;
-      background-color: black;
+      background-color: crimson;
     }
   }
 
