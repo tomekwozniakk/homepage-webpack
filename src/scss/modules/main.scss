@@ -1,11 +1,15 @@
 .main {
-    max-width: 1024px;
-    margin: 16px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 16px;
-    column-gap: 16px;
-    &--contact {
-      grid-template-columns: 1fr;
-    }
+  max-width: 1024px;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 16px;
+  &--contact {
+    grid-template-columns: 1fr;
   }
+}
+
+.notes {
+  grid-template-columns: 1fr 1fr 1fr;
+}
