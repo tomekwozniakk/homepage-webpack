@@ -1,5 +1,5 @@
 .header {
-    &__description {
+    &-description {
       background: white;
       max-width: 1024px;
       margin: 0 auto;
@@ -8,15 +8,15 @@
       border: 2px solid black;
       border-radius: 16px;
     }
-    &__description-header {
+    &-description__header {
       color: crimson;
       text-align: center;
     }
-    &__description-image {
+    &-description__image {
       border-radius: 16px;
       max-width: 100%;
     }
-    &__description-text {
+    &-description__text {
       padding: 20px;
       text-align: center;
     }

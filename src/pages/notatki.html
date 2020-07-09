@@ -79,12 +79,12 @@
             </nav>
         </div>
         <h1 class="header__title">Moje notatki z WTF</h1>
-        <section class="header__description">
-            <img class="header__description-image" src="../assets/img/notebook.jpg"
+        <section class="header-description">
+            <img class="header-description__image" src="../assets/img/notebook.jpg"
                 alt="Na stole obok laptopa leży notes, a na nim ołówek.">
             <div>
-                <h2 class="header__description-header">Siema!</h2>
-                <p class="header__description-text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
+                <h2 class="header-description__header">Siema!</h2>
+                <p class="header-description__text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
                     postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS.</p>
             </div>
         </section>
@@ -107,12 +107,35 @@
             </h2>
             <article class="notes__text">
                 <ul class="notes__text-list">
-                    <li class="notes__text-list-element"><strong>http, https, url, jak działa przeglądarka? (https://cotenfrontend.pl:443/index.html?parametr=wartość)</strong>: adres www --> przeglądarka szuka serwera --> odpytuje serwer --> serwer wysyła do przeglądarki html --> przeglądarka wczytuje html i szuka dodatkowych zasobów --> parsuje i renderuje stronę.</li>
-                    <li class="notes__text-list-element"><strong>kody: 100</strong> - hold on, <strong> 200</strong> - OK, <strong>30x</strong> - złe miejsce ale przekieruję, wiem gdzie, <strong>404</strong> - brak zasobu, <strong>50x</strong> - błąd serwera.</li>
-                    <li class="notes__text-list-element"><strong>root "/"</strong> jeśli go nie podamy, przeglądarka szuka ścieżki względem podanego adresu (może nieznaleźć, np jak jesteśmy na podstronie), jeśli podamy - szuka zaczynając od głównego adresu strony.</li>
-                    <li class="notes__text-list-element"><strong>div nie ma znaczenia semantycznego! Tylko jako opakowanie gdy nie istnieje inny odpowiedni semantyczny znacznik.</strong></li>
+                    <li class="notes__text-list-element"><strong>http, https, url, jak działa przeglądarka?
+                            (https://cotenfrontend.pl:443/index.html?parametr=wartość)</strong>: adres www -->
+                        przeglądarka szuka serwera --> odpytuje serwer --> serwer wysyła do przeglądarki html -->
+                        przeglądarka wczytuje html i szuka dodatkowych zasobów --> parsuje i renderuje stronę.</li>
+                    <li class="notes__text-list-element"><strong>kody: 100</strong> - hold on, <strong> 200</strong> -
+                        OK, <strong>30x</strong> - złe miejsce ale przekieruję, wiem gdzie, <strong>404</strong> - brak
+                        zasobu, <strong>50x</strong> - błąd serwera.</li>
+                    <li class="notes__text-list-element"><strong>root "/"</strong> jeśli go nie podamy, przeglądarka
+                        szuka ścieżki względem podanego adresu (może nieznaleźć, np jak jesteśmy na podstronie), jeśli
+                        podamy - szuka zaczynając od głównego adresu strony.</li>
+                    <li class="notes__text-list-element"><strong>div nie ma znaczenia semantycznego! Tylko jako
+                            opakowanie gdy nie istnieje inny odpowiedni semantyczny znacznik.</strong></li>
+                    <li class="notes__text-list-element">HTML to instrukcja a DOM to już gotowa, "złożona" strona
+                        (przykład: instrukcja a złożony mebel z IKEI 😄)</li>
+                    <li class="notes__text-list-element">elementy, które będą używane przez JS, powinny mieć klasę np.
+                        ".element--js". </li>
+                    <li class="notes__text-list-element">dany element np. "header" to węzeł czyli node. </li>
+                    <li class="notes__text-list-element"><strong>debugging:</strong> sprawdź, czy zapisałeś plik, czy
+                        edytujesz właściwy plik, czy odświeżyłeś przeglądarkę, można w F12 w zakł. Network włączyć
+                        "disable cache", czy nie ma błędu w edytorze (devtoolsach), czytaj błędy, zajrzyj do zakłądki
+                        Network (kody błędów), <strong>pogadaj z kaczką!</strong>, wygoogluj problem!,
+                        <strong>stackoverflow</strong>, czytaj dokumentację, GitHub issues.</li>
+                    <li class="notes__text-list-element"><strong>przydatne linki: </strong><a
+                            href="developer.mozilla.org" class="link">developer.mozilla.org</a> || <a href="devdocs.io"
+                            class="link">devdocs.io</a> || <a href="caniuse.com" class="link">caniuse.com</a> || <a href="css-tricks.com/almanac" class="link">css-tricks.com/almanac</a> || <a href="https://www.w3.org/TR/html52/" class="link">www.w3.org/TR/html52/</a> || <a href="https://www.w3.org/TR/CSS/" class="link">www.w3.org/TR/CSS/</a> || </li>
+                    <li class="notes__text-list-element"><strong>dl - description list:</strong> dl - znacznik główny, dt - description title, dd - opis. </li>
+                    <li class="notes__text-list-element"><strong>tabele</strong> - nie używamy do budowania layoutu!</li>
                     <li class="notes__text-list-element"></li>
-
+                    <li class="notes__text-list-element"></li>
                 </ul>
             </article>
         </section>
@@ -133,9 +156,25 @@
             </h2>
             <article class="notes__text">
                 <ul class="notes__text-list">
-                    <li class="notes__text-list-element"><strong>display: inline-block</strong> jak inline, ale można zmieniać parametry np width i height.</li>
-                    <li class="notes__text-list-element"><strong>margin: (x) auto</strong> - "zadziała", czyli wyśrodkuje, tylko elemety które mają zdefiniowaną szerokość!</li>
-                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element"><strong>display: inline-block</strong> jak inline, ale można
+                        zmieniać parametry np width i height.</li>
+                    <li class="notes__text-list-element"><strong>margin: (x) auto</strong> - "zadziała", czyli
+                        wyśrodkuje, tylko elemety które mają zdefiniowaną szerokość!</li>
+                    <li class="notes__text-list-element">przydatna własność - <strong>position:sticky</strong></li>
+                    <li class="notes__text-list-element"><a class="a__link" href="caniuse.com">caniuse.com</a></li>
+                    <li class="notes__text-list-element"><strong>float nie służy do budowania layoutu!</strong></li>
+                    <li class="notes__text-list-element">clear:both - "czyści" z obu stron, czyli rozszerza "pudełko" do
+                        takiej wielkości jakiej jest największy float. Ogólnie float - <strong>rzadko używany (i dobrze
+                            bo jest ciulowy).</strong></li>
+                    <li class="notes__text-list-element"><strong>BEM: block - </strong>element nadrzędny;
+                        <strong>element - </strong>część bloku (nie musi być bezpośrednim dzieckiem!); <strong>modifier
+                            - </strong>jeśli element ma jakąś cechę odróżniającą od innych elementów tego typu. Zapis:
+                        block__element--modifier. Wydzielamy bloki analizując strukturę naszego HTML na stronie. Lepiej
+                        nie robić zbyt wielu zagnieżdżeń, żeby nie było zbyt skomplikowanie.</li>
+                    <li class="notes__text-list-element"><strong>rekomendowana normalizacja:</strong> normalize.css + (html {box-sizing: border-box}, *, *:before, *:after {box-sizing:inherit}).</li>
+                    <li class="notes__text-list-element"><strong>flex-box</strong> - idealny do wyśrodkowania elementów. Domyślne wartości flex- : direction - row, wrap - nowrap </li>
+                    <li class="notes__text-list-element"><strong>justify-content</strong> - do ustawiania elementów wzdłuż osi flex-direction, <strong>align-content</strong> - wzdłuż osi przeciwnej. <strong> Align-self </strong>- align content ale dla pojedynczego elementu. <strong>Order</strong> - kolejność elementów. <strong>Flex-grow </strong>- proporcje jak element ma rosnąć względem innych. <strong>Flex-shrink</strong> - to samo ale jak ma się kurczyć. <strong>Flex-basis - </strong> określenie min.wielkości elementu. </li>
+                    <li class="notes__text-list-element"><strong>background-image: url('ścieżka do pliku')</strong></li>
                     <li class="notes__text-list-element"></li>
                 </ul>
             </article>
@@ -157,18 +196,49 @@
             </h2>
             <article class="notes__text">
                 <ul class="notes__text-list">
-                    <li class="notes__text-list-element"><strong>ECMA Script 6+</strong> - specyfikacja ułatwiająca życie developerom JSa</li>
-                    <li class="notes__text-list-element">JS to <strong>sąsiad z najwyższego piętra</strong> i może wpływać na wszystkie pozostałe elementy strony internetowej.</li>
-                    <li class="notes__text-list-element"><strong>Elementy JS:</strong> wartości, zmienne, operacje porównywania, literały, obiekty, funkcje.</li>
-                    <li class="notes__text-list-element"><strong>Backtick "`":</strong> `Nazywam się ${zmienna}.`</li>
-
+                    <li class="notes__text-list-element"><strong>ECMA Script 6+</strong> - specyfikacja ułatwiająca
+                        życie developerom JSa</li>
+                    <li class="notes__text-list-element">JS to <strong>sąsiad z najwyższego piętra</strong> i może
+                        wpływać na wszystkie pozostałe elementy strony internetowej.</li>
+                    <li class="notes__text-list-element"><strong>elementy JS:</strong> wartości, zmienne, operacje
+                        porównywania, literały, obiekty, funkcje.</li>
+                    <li class="notes__text-list-element"><strong>backtick "`":</strong> `Nazywam się ${zmienna}.`</li>
+                    <li class="notes__text-list-element"><strong>zmienna to nie wartość!</strong> Tylko przypisanie już
+                        istniejącej wartości. const - zmienna mająca stałe połączenie z jedną wartością, let - możemy
+                        przepinać połączenie, ale definiujemy tylko raz.</li>
+                    <li class="notes__text-list-element"><strong>typeof zmienna</strong> - sprawdzamy typ zmiennej</li>
+                    <li class="notes__text-list-element"><strong>immutability</strong> - nie możemy zmieniać warości
+                        primitive values w JS, jedynie połączenie pomiędzy nimi a zmiennymi.</li>
+                    <li class="notes__text-list-element">Szukanie elementu po klasie -
+                        <strong>document.querySelector(".nazwaKlasy").</strong> Dodanie treści do HTML poprzez JS -
+                        <strong>element.innerHTML = `treść`.</strong> </li>
+                    <li class="notes__text-list-element"><strong>deklarowanie funkcji: </strong>"function
+                        nazwaFunkcji(argument/y) {ciało funkcji - tu przypisujemy argumenty, deklarujemy co funkcja ma
+                        robić/zwracać}. Następnie funkcję wywołujemy wpisując jej nazwę i w nawiasie określamy
+                        argumenty. <strong>Zalety</strong> - nie powtarzamy kodu (DRY), lepsza czytelność/przejrzystość,
+                        łatwiej szukać błędów, odpowiedzialność za wykonanie zadania w jednym miejscu.</li>
+                    <li class="notes__text-list-element"><strong>funkcja strzałkowa - </strong>łatwiejszy(?) sposób
+                        zapisu deklaracji funkcji: "const funkcja = (argumenty) => {ciało funkcji}"; nie jest
+                        zamiennikiem tradycyjnego zapisu (nie tworzy kontekstu THIS, nie ma dostępu do ARGUMENTS i
+                        SUPER. Zazwyczaj nie zobaczysz różnicy.</li>
+                    <li class="notes__text-list-element"><strong>obiekt w JS</strong> - const obiekt = {key: value,
+                        key2: value,} key - unikalny w ramach obiektu - value - mogą to być prymitywy / funkcje /
+                        zagnieżdżenia (obiekty). W obiektach zmienne nazywamy własnościami (properties), a funkcje to
+                        metody. <strong>Dot notation</strong> - nazwaObiektu.property - możemy pracować na wybranych
+                        właściwościach obiektu. <strong>Bracket notation</strong> - nazwaObiektu['nazwaWłasności']</li>
+                    <li class="notes__text-list-element"><strong>immutability w obiektach - </strong>"constem" są
+                        połączenia nazwy obiektu z obiektem, własności obiektu można przepinać!</li>
+                    <li class="notes__text-list-element"><strong>if('wyrażenie logiczne') {'wykonaj ten kod jeśli true'}</strong></li>
+                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element"></li>
                 </ul>
             </article>
         </section>
 
 
     </main>
-    <footer class="footer">Copyright Tomasz Woźniak 2020</footer>
+    <footer class="footer">Tomasz Woźniak 2020</footer>
 
 </body>
 
