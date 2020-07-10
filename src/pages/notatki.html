@@ -85,7 +85,8 @@
             <div>
                 <h2 class="header-description__header">Siema!</h2>
                 <p class="header-description__text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
-                    postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS.</p>
+                    postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS. P.S. notatki są chaotyczne, ale zrozumiałe dla mnie 🏇🏇🏇🏇🏇🏇</p>
+                <p class="header__description-text date--js"></p>
             </div>
         </section>
     </header>
@@ -131,10 +132,15 @@
                         <strong>stackoverflow</strong>, czytaj dokumentację, GitHub issues.</li>
                     <li class="notes__text-list-element"><strong>przydatne linki: </strong><a
                             href="developer.mozilla.org" class="link">developer.mozilla.org</a> || <a href="devdocs.io"
-                            class="link">devdocs.io</a> || <a href="caniuse.com" class="link">caniuse.com</a> || <a href="css-tricks.com/almanac" class="link">css-tricks.com/almanac</a> || <a href="https://www.w3.org/TR/html52/" class="link">www.w3.org/TR/html52/</a> || <a href="https://www.w3.org/TR/CSS/" class="link">www.w3.org/TR/CSS/</a> || </li>
-                    <li class="notes__text-list-element"><strong>dl - description list:</strong> dl - znacznik główny, dt - description title, dd - opis. </li>
-                    <li class="notes__text-list-element"><strong>tabele</strong> - nie używamy do budowania layoutu!</li>
-                    <li class="notes__text-list-element"></li>
+                            class="link">devdocs.io</a> || <a href="caniuse.com" class="link">caniuse.com</a> || <a
+                            href="css-tricks.com/almanac" class="link">css-tricks.com/almanac</a> || <a
+                            href="https://www.w3.org/TR/html52/" class="link">www.w3.org/TR/html52/</a> || <a
+                            href="https://www.w3.org/TR/CSS/" class="link">www.w3.org/TR/CSS/</a> || </li>
+                    <li class="notes__text-list-element"><strong>dl - description list:</strong> dl - znacznik główny,
+                        dt - description title, dd - opis. </li>
+                    <li class="notes__text-list-element"><strong>tabele</strong> - nie używamy do budowania layoutu!
+                    </li>
+                    <li class="notes__text-list-element"><strong>formularze:</strong> cała składnia => <a href="https://github.com/tomekwozniakk/forms" class="link">github.com/tomekwozniakk/forms</a>, <strong>wysłanie forma - </strong>action="url://z-którym-gadamy", bezpieczniejsza i zalecana jest metoda POST, <strong>enctype</strong> - jeśli wysyłamy pliki, zmieniamy na "multipart/form-data", <strong>atrybut required</strong> - pole obowiązkowe, <strong>pattern</strong> - wpisane dane muszą mieć określoną formę (<a href="http://html5pattern.com/Names" class="link">html5pattern.com/Names</a>). <strong>Walidacja po stronie frontendu nie zastępuje walidacji po stronie backendu!</strong></li>
                     <li class="notes__text-list-element"></li>
                 </ul>
             </article>
@@ -171,10 +177,23 @@
                             - </strong>jeśli element ma jakąś cechę odróżniającą od innych elementów tego typu. Zapis:
                         block__element--modifier. Wydzielamy bloki analizując strukturę naszego HTML na stronie. Lepiej
                         nie robić zbyt wielu zagnieżdżeń, żeby nie było zbyt skomplikowanie.</li>
-                    <li class="notes__text-list-element"><strong>rekomendowana normalizacja:</strong> normalize.css + (html {box-sizing: border-box}, *, *:before, *:after {box-sizing:inherit}).</li>
-                    <li class="notes__text-list-element"><strong>flex-box</strong> - idealny do wyśrodkowania elementów. Domyślne wartości flex- : direction - row, wrap - nowrap </li>
-                    <li class="notes__text-list-element"><strong>justify-content</strong> - do ustawiania elementów wzdłuż osi flex-direction, <strong>align-content</strong> - wzdłuż osi przeciwnej. <strong> Align-self </strong>- align content ale dla pojedynczego elementu. <strong>Order</strong> - kolejność elementów. <strong>Flex-grow </strong>- proporcje jak element ma rosnąć względem innych. <strong>Flex-shrink</strong> - to samo ale jak ma się kurczyć. <strong>Flex-basis - </strong> określenie min.wielkości elementu. </li>
-                    <li class="notes__text-list-element"><strong>background-image: url('ścieżka do pliku')</strong></li>
+                    <li class="notes__text-list-element"><strong>rekomendowana normalizacja:</strong> normalize.css +
+                        (html {box-sizing: border-box}, *, *:before, *:after {box-sizing:inherit}).</li>
+                    <li class="notes__text-list-element"><strong>flex-box</strong> - idealny do wyśrodkowania elementów.
+                        Domyślne wartości flex- : direction - row, wrap - nowrap </li>
+                    <li class="notes__text-list-element"><strong>justify-content</strong> - do ustawiania elementów
+                        wzdłuż osi flex-direction, <strong>align-content</strong> - wzdłuż osi przeciwnej. <strong>
+                            Align-self </strong>- align content ale dla pojedynczego elementu. <strong>Order</strong> -
+                        kolejność elementów. <strong>Flex-grow </strong>- proporcje jak element ma rosnąć względem
+                        innych. <strong>Flex-shrink</strong> - to samo ale jak ma się kurczyć. <strong>Flex-basis -
+                        </strong> określenie min.wielkości elementu. </li>
+                    <li class="notes__text-list-element"><strong>GRID</strong> - numeracja siatki zaczyna się od 1. <strong>Przykład:</strong> grid-template-columns: repeat(4, 1fr) 2fr; <strong>minmax(minwartość, maxwartość);</strong></li>
+                    <li class="notes__text-list-element">grid musi się zamykać w regulanych prostokątach.</li>
+                    <li class="notes__text-list-element">grid-column: początek/koniec (można wpisać nr, albo nazwę, albo "span + przez ile elementów ma się rozciągać"; subgrid - dopiero w planach!</li>
+                    <li class="notes__text-list-element"><strong>!!!grid a flexbox!!!</strong> - grid do layoutów, flex do pozycjonowania elementów na stronie.</li>
+                    <li class="notes__text-list-element"><strong>mobile first: </strong>najpierw stylujemy na urządzenia mobilne, potem dodajemy media queries dla większych ekranów.</li>
+                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
                 </ul>
             </article>
@@ -228,10 +247,21 @@
                         właściwościach obiektu. <strong>Bracket notation</strong> - nazwaObiektu['nazwaWłasności']</li>
                     <li class="notes__text-list-element"><strong>immutability w obiektach - </strong>"constem" są
                         połączenia nazwy obiektu z obiektem, własności obiektu można przepinać!</li>
-                    <li class="notes__text-list-element"><strong>if('wyrażenie logiczne') {'wykonaj ten kod jeśli true'}</strong></li>
+                    <li class="notes__text-list-element">operatory porównania: == - równe "zwykłe", === - równe,
+                        sprawdza typeof, != - różne, !== - różne, sprawdza typeof, </li>
+                    <li class="notes__text-list-element"><strong>if('wyrażenie logiczne') {'wykonaj ten kod jeśli
+                            true'}, if(warunek)&&(warunek)</strong> - oba muszą być true, <strong>
+                            if(warunek)||(warunek)</strong> - OR (wystarczy że jeden jest true), </li>
+                    <li class="notes__text-list-element"><strong> if(warunek) {wykonaj kod jeśli true) else {wykonaj kod
+                            jeśli
+                            false}, if(){} else if
+                            (){} else() {} (jeśli pierwszy true, to pomija resztę, itd.)</strong>,</li>
+                    <li class="notes__text-list-element">! - not (odwraca
+                        wartość wyrażenia logicznego),</li>
+                    <li class="notes__text-list-element"><strong>switch(zmienna)</strong>{case x: funkcja; break case y:funkcja; break; default: funkcja;</li>
                     <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
-                    <li class="notes__text-list-element"></li>
+
                 </ul>
             </article>
         </section>

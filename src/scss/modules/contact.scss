@@ -1,21 +1,59 @@
 .contact {
-    padding: 20px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
+  border-radius: 16px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  &__header {
+    grid-column: 1/4;
+    color: crimson;
+    font-size: 32px;
+    text-align: center;
+    z-index: 1;
+  }
+  &__option {
     border: 1px solid black;
     border-radius: 16px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    &__header {
-      color: crimson;
-      font-size: 32px;
+    margin: 20px 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: .3s;
+    &-description {
+      text-align: center;
+    }
+    &-header {
       text-align: center;
       position: relative;
-      z-index: 1;
+      padding: 10px 0;
+      transition: .3s;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        width: 60%;
+        height: 2px;
+        background: white;
+        transition: .3s;
+      }
     }
-    &__option-header {
-      color: royalblue;
-      text-align: center;
+    &:hover {
+      & .contact__option-header::after {
+        background: white;
+      }
+      & .contact__option-header {
+        color: rgb(127, 136, 216);
+      }
+      & .fas {
+        margin-right: 10px;
+        color: rgb(127, 136, 216);
+      }
     }
   }
+}
+
+.fas {
+  transition: .3s 0s;
+}

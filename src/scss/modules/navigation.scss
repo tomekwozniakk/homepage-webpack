@@ -7,21 +7,23 @@
     &__wrap {
       min-height: 50px;
       width: 100%;
-      background: rgba(68, 109, 233, 0.7);
+      background: rgba(68, 109, 233, 0.9);
       position: fixed;
       top: 0;
       z-index: 2;
     }
     &__link {
       text-transform: uppercase;
+      text-align: center;
       color: black;
+      background: rgba(68, 109, 233, 0.9);
       display: block;
-      margin-bottom: 16px;
+      padding: 10px 0;
       transition: .3s;
     }
     &__link:hover {
       color: white;
-      background-color: crimson;
+      background-color: rgb(0, 0, 0);
     }
   }
 

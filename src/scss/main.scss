@@ -33,6 +33,7 @@ a {
 
 .date--js {
   text-align: right;
+  padding-right: 20px ;
   font-style: italic;
   color: crimson;
 }
@@ -50,6 +51,17 @@ a {
   .header-description {
     flex-direction: column;
   }
+  
+  .contact {
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: 0 auto;
+    &__header {
+      grid-column:1;}
+    &__option {
+        width: 80%;
+        margin: 10px auto;
+  }}
 }
 
 @media (min-width: 768px) {
@@ -60,11 +72,12 @@ a {
     background: rgba(68, 109, 233, 0.7);
     height: 50px;
     &__link {
-      height: 100%;
-      margin: 0 auto;
+      min-width: 20%;
       height: 50px;
-      line-height: 50px;
-      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
     }
   }
 
