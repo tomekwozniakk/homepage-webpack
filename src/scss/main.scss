@@ -66,10 +66,12 @@ a {
 
 @media (min-width: 768px) {
   .navigation {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: rgba(68, 109, 233, 0.7);
+    background: rgba(68, 109, 233, 0.9);
     height: 50px;
     &__link {
       min-width: 20%;
@@ -83,5 +85,11 @@ a {
 
   .hamburger {
     display: none;
+  }
+
+  .header{
+    &__title {
+      margin-top: 70px;
+    }
   }
 }

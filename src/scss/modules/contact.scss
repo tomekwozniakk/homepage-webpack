@@ -28,6 +28,7 @@
       position: relative;
       padding: 10px 0;
       transition: .3s;
+      color: rgba(255, 255, 255, 0.5);
       &::after {
         content: "";
         position: absolute;
@@ -39,21 +40,30 @@
         transition: .3s;
       }
     }
+    &-social {
+      color: white;
+      &:hover {
+        & .fab {
+          color: rgb(218, 71, 103);
+          margin-right: 10px;
+        }
+      }
+    }
     &:hover {
       & .contact__option-header::after {
         background: white;
       }
       & .contact__option-header {
-        color: rgb(127, 136, 216);
+        color: white;
       }
       & .fas {
         margin-right: 10px;
-        color: rgb(127, 136, 216);
+        color: white;
       }
     }
   }
 }
 
-.fas {
+.fas, .fab {
   transition: .3s 0s;
 }
