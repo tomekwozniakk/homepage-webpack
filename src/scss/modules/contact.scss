@@ -1,25 +1,25 @@
 .contact {
   padding: 0 20px 20px 20px;
-  border: 1px solid black;
+  border: 2px solid white;
   border-radius: 16px;
-  background: white;
+  background: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   &__header {
     grid-column: 1/4;
-    color: crimson;
+    color: white;
     font-size: 32px;
     text-align: center;
     z-index: 1;
   }
   &__option {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 16px;
     margin: 20px 0;
     background: rgb(0, 0, 0);
     color: white;
-    transition: .3s;
+    transition: .3s linear;
     &-description {
       text-align: center;
     }
@@ -27,7 +27,7 @@
       text-align: center;
       position: relative;
       padding: 10px 0;
-      transition: .3s;
+      transition: .3s linear;
       color: rgba(255, 255, 255, 0.5);
       &::after {
         content: "";
@@ -37,7 +37,7 @@
         width: 60%;
         height: 2px;
         background: white;
-        transition: .3s;
+        transition: .3s linear;
       }
     }
     &-social {
@@ -65,5 +65,5 @@
 }
 
 .fas, .fab {
-  transition: .3s 0s;
+  transition: .3s 0s linear;
 }

@@ -21,9 +21,9 @@
       text-align: center;
     }
     &__title {
-      color: crimson;
+      color: black;
       text-align: center;
-      // margin-top: 70px;
+      font-weight: 900;
       padding-bottom: 16px;
       position: relative;
     }
@@ -34,6 +34,6 @@
       left: 30%;
       width: 40%;
       height: 2px;
-      background: royalblue;
+      background: crimson;
     }
   }

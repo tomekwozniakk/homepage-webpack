@@ -70,14 +70,14 @@
 
 <body>
     <header class="header">
-        
-            <button class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
-            <nav class="navigation navigation--js">
-                <a class="navigation__link" href="index.html">Strona główna</a>
-                <a class="navigation__link" href="prace-domowe.html">Prace domowe</a>
-                <a class="navigation__link" href="kontakt.html">Kontakt</a>
-            </nav>
-        
+
+        <button class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
+        <nav class="navigation navigation--js">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="prace-domowe.html">Prace domowe</a>
+            <a class="navigation__link" href="kontakt.html">Kontakt</a>
+        </nav>
+
         <h1 class="header__title">Moje notatki z WTF</h1>
         <section class="header-description">
             <img class="header-description__image" src="../assets/img/notebook.jpg"
@@ -85,7 +85,8 @@
             <div>
                 <h2 class="header-description__header">Siema!</h2>
                 <p class="header-description__text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
-                    postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS. P.S. notatki są chaotyczne, ale zrozumiałe dla mnie 🏇🏇🏇🏇🏇🏇</p>
+                    postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS. P.S. notatki są chaotyczne, ale
+                    zrozumiałe dla mnie 🏇🏇🏇🏇🏇🏇</p>
                 <p class="header__description-text date--js"></p>
             </div>
         </section>
@@ -140,7 +141,19 @@
                         dt - description title, dd - opis. </li>
                     <li class="notes__text-list-element"><strong>tabele</strong> - nie używamy do budowania layoutu!
                     </li>
-                    <li class="notes__text-list-element"><strong>formularze:</strong> cała składnia => <a href="https://github.com/tomekwozniakk/forms" class="link">github.com/tomekwozniakk/forms</a>, <strong>wysłanie forma - </strong>action="url://z-którym-gadamy", bezpieczniejsza i zalecana jest metoda POST, <strong>enctype</strong> - jeśli wysyłamy pliki, zmieniamy na "multipart/form-data", <strong>atrybut required</strong> - pole obowiązkowe, <strong>pattern</strong> - wpisane dane muszą mieć określoną formę (<a href="http://html5pattern.com/Names" class="link">html5pattern.com/Names</a>). <strong>Walidacja po stronie frontendu nie zastępuje walidacji po stronie backendu!</strong></li>
+                    <li class="notes__text-list-element"><strong>formularze:</strong> cała składnia => <a
+                            href="https://github.com/tomekwozniakk/forms"
+                            class="link">github.com/tomekwozniakk/forms</a>, <strong>wysłanie forma -
+                        </strong>action="url://z-którym-gadamy", bezpieczniejsza i zalecana jest metoda POST,
+                        <strong>enctype</strong> - jeśli wysyłamy pliki, zmieniamy na "multipart/form-data",
+                        <strong>atrybut required</strong> - pole obowiązkowe, <strong>pattern</strong> - wpisane dane
+                        muszą mieć określoną formę (<a href="http://html5pattern.com/Names"
+                            class="link">html5pattern.com/Names</a>). <strong>Walidacja po stronie frontendu nie
+                            zastępuje walidacji po stronie backendu!</strong></li>
+                    <li class="notes__text-list-element"><strong>.gitignore</strong> - umieszczamy tam nazwy plików
+                        których nie chcemy dodawać do repo na GitHubie.</li>
+                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
                 </ul>
             </article>
@@ -187,12 +200,20 @@
                         kolejność elementów. <strong>Flex-grow </strong>- proporcje jak element ma rosnąć względem
                         innych. <strong>Flex-shrink</strong> - to samo ale jak ma się kurczyć. <strong>Flex-basis -
                         </strong> określenie min.wielkości elementu. </li>
-                    <li class="notes__text-list-element"><strong>GRID</strong> - numeracja siatki zaczyna się od 1. <strong>Przykład:</strong> grid-template-columns: repeat(4, 1fr) 2fr; <strong>minmax(minwartość, maxwartość);</strong></li>
+                    <li class="notes__text-list-element"><strong>GRID</strong> - numeracja siatki zaczyna się od 1.
+                        <strong>Przykład:</strong> grid-template-columns: repeat(4, 1fr) 2fr; <strong>minmax(minwartość,
+                            maxwartość);</strong></li>
                     <li class="notes__text-list-element">grid musi się zamykać w regulanych prostokątach.</li>
-                    <li class="notes__text-list-element">grid-column: początek/koniec (można wpisać nr, albo nazwę, albo "span + przez ile elementów ma się rozciągać"; subgrid - dopiero w planach!</li>
-                    <li class="notes__text-list-element"><strong>!!!grid a flexbox!!!</strong> - grid do layoutów, flex do pozycjonowania elementów na stronie.</li>
-                    <li class="notes__text-list-element"><strong>mobile first: </strong>najpierw stylujemy na urządzenia mobilne, potem dodajemy media queries dla większych ekranów. Najpierw definiujemy własności które obowiązują na całej stronie, a potem modyfikujemy te właściwości które mają się zmieniać w miarę zwiększania rozdzielczości. </li>
-                    <li class="notes__text-list-element"></li>
+                    <li class="notes__text-list-element">grid-column: początek/koniec (można wpisać nr, albo nazwę, albo
+                        "span + przez ile elementów ma się rozciągać"; subgrid - dopiero w planach!</li>
+                    <li class="notes__text-list-element"><strong>!!!grid a flexbox!!!</strong> - grid do layoutów, flex
+                        do pozycjonowania elementów na stronie.</li>
+                    <li class="notes__text-list-element"><strong>mobile first: </strong>najpierw stylujemy na urządzenia
+                        mobilne, potem dodajemy media queries dla większych ekranów. Najpierw definiujemy własności
+                        które obowiązują na całej stronie, a potem modyfikujemy te właściwości które mają się zmieniać w
+                        miarę zwiększania rozdzielczości. </li>
+                    <li class="notes__text-list-element"><strong>pseudoelementy - ::before, ::after - </strong>tworzymy
+                        je za pomocą właściwości 'content: ""'. Używane do upiększania elementów.</li>
                     <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
                 </ul>
@@ -258,7 +279,15 @@
                             (){} else() {} (jeśli pierwszy true, to pomija resztę, itd.)</strong>,</li>
                     <li class="notes__text-list-element">! - not (odwraca
                         wartość wyrażenia logicznego),</li>
-                    <li class="notes__text-list-element"><strong>switch(zmienna)</strong>{case x: funkcja; break case y:funkcja; break; default: funkcja;</li>
+                    <li class="notes__text-list-element"><strong>switch(zmienna)</strong>{case x: funkcja; break case
+                        y:funkcja; break; default: funkcja;</li>
+                    <li class="notes__text-list-element"><strong>addEventListener</strong> - może być na click lub inną
+                        aktywność. ogólny zapis: <strong>element.addEventListener('click', () => {kod})</strong></li>
+                    <li class="notes__text-list-element"><strong>node.js - </strong>to taki JavaScript który jest
+                        uruchamiany poza przeglądarką (nie ma dostępu do DOM). Za jego pomocą możemy testować skrypty
+                        bez pisania HTMLa. Komenda w konsoli do uruchomienia plików *.js - "node nazwapliku.js"</li>
+                    <li class="notes__text-list-element"><strong>npm: </strong>zestawy narzędzi potrzebne do konkretnych zadań, gotowe do pobrania. Inicjalizacja - "npm init (-y)", instalowanie paczek "npm install 'nazwa paczki' --save(-dev)" (save do paczek które widać na stronie, save-dev do pazek, których używamy do rozwoju oprogramowania), powstają pliki package.json i package-lock.json, orz katalog "node_modules", gdzie są pliki paczek (jego nie commitować).</li>
+                    <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
 
