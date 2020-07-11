@@ -8,7 +8,7 @@
     justify-content: flex-start;
     align-items: center;
     &__title {
-      color: crimson;
+      color: black;
       font-size: 32px;
       text-align: center;
       position: relative;
@@ -21,20 +21,21 @@
       left: -15%;
       width: 130%;
       height: 2px;
-      background: royalblue;
+      background: navy;;
       z-index: 1;
     }
     &__comment {
       &-heading {
         font-size: 24px;
-        color: royalblue;
+        color: navy;
         text-align: center;
       }
       &--list {
         border: 1px solid black;
         padding: 20px 30px;
         border-radius: 16px;
-        color: crimson;
+        color: white;
+        background: rgb(43, 43, 43);
       }
     }
   }
