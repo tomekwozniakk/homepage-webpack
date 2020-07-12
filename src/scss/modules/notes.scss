@@ -1,12 +1,11 @@
 .notes {
     text-align: center;
     &__part {
-        background: #fff;
-        border: 1px solid black;
+        background: #fff; 
         border-radius: 16px;
     }
     &__title {
-        width: 100%;
+        // width: 100%;
         margin: 0;
         padding: 10px 0;
         position: relative;

@@ -6,12 +6,14 @@
 
 html {
   box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 *,
 *:after,
 *:before {
   box-sizing: inherit;
+  overflow-wrap: inherit;
 }
 
 body {
@@ -26,7 +28,7 @@ a {
 
 .a {
   &__link {
-    color: rgb(199, 31, 67);
+    color: rgb(255, 255, 255);
     font-weight: bold;
   }
 }
@@ -47,17 +49,8 @@ a {
   .contact__header {
     font-size: 24px;
   }
-
-  .header-description {
-    flex-direction: column;
-  }
   
-  .contact {
-    grid-template-columns: 1fr;
-    width: 100%;
-    margin: 0 auto;
-    &__header {
-      grid-column:1;}
+  .contact {  
     &__option {
         width: 80%;
         margin: 16px auto;
@@ -65,6 +58,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+  }
+
   .navigation {
     position: fixed;
     top: 0;
@@ -88,8 +85,36 @@ a {
   }
 
   .header{
+    max-width: 1024px;
+    margin: 0 auto;
+    &-description {
+      flex-direction: row;
+    }
     &__title {
       margin-top: 70px;
+    }
+  }
+
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr;
+    &__header {
+      grid-column: 1/4;
+    }
+    &__option {
+      &-header {
+        padding: 10px 0;
+        &::after {
+          content: "";
+          left: -100%;
+          background: black;
+          transition: .4s linear;
+        }
+      }
+      &:hover {
+        & .contact__option-header::after {
+          background: white;
+          left: 20%;
+      }}
     }
   }
 }

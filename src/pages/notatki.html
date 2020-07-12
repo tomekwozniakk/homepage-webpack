@@ -71,7 +71,7 @@
 <body>
     <header class="header">
 
-        <button class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
+        <button aria-label="open menu" class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
         <nav class="navigation navigation--js">
             <a class="navigation__link" href="index.html">Strona główna</a>
             <a class="navigation__link" href="prace-domowe.html">Prace domowe</a>
@@ -110,7 +110,7 @@
             <article class="notes__text">
                 <ul class="notes__text-list">
                     <li class="notes__text-list-element"><strong>http, https, url, jak działa przeglądarka?
-                            (https://cotenfrontend.pl:443/index.html?parametr=wartość)</strong>: adres www -->
+                            (https: //cotenfrontend.pl:443/ index.html? parametr=wartość)</strong>: adres www -->
                         przeglądarka szuka serwera --> odpytuje serwer --> serwer wysyła do przeglądarki html -->
                         przeglądarka wczytuje html i szuka dodatkowych zasobów --> parsuje i renderuje stronę.</li>
                     <li class="notes__text-list-element"><strong>kody: 100</strong> - hold on, <strong> 200</strong> -
@@ -143,7 +143,7 @@
                     </li>
                     <li class="notes__text-list-element"><strong>formularze:</strong> cała składnia => <a
                             href="https://github.com/tomekwozniakk/forms"
-                            class="link">github.com/tomekwozniakk/forms</a>, <strong>wysłanie forma -
+                            class="link">FORMS</a>, <strong>wysłanie forma -
                         </strong>action="url://z-którym-gadamy", bezpieczniejsza i zalecana jest metoda POST,
                         <strong>enctype</strong> - jeśli wysyłamy pliki, zmieniamy na "multipart/form-data",
                         <strong>atrybut required</strong> - pole obowiązkowe, <strong>pattern</strong> - wpisane dane
@@ -250,7 +250,7 @@
                     <li class="notes__text-list-element"><strong>immutability</strong> - nie możemy zmieniać warości
                         primitive values w JS, jedynie połączenie pomiędzy nimi a zmiennymi.</li>
                     <li class="notes__text-list-element">Szukanie elementu po klasie -
-                        <strong>document.querySelector(".nazwaKlasy").</strong> Dodanie treści do HTML poprzez JS -
+                        <strong>document.querySelector( ".nazwaKlasy" ).</strong> Dodanie treści do HTML poprzez JS -
                         <strong>element.innerHTML = `treść`.</strong> </li>
                     <li class="notes__text-list-element"><strong>deklarowanie funkcji: </strong>"function
                         nazwaFunkcji(argument/y) {ciało funkcji - tu przypisujemy argumenty, deklarujemy co funkcja ma
@@ -265,7 +265,7 @@
                         key2: value,} key - unikalny w ramach obiektu - value - mogą to być prymitywy / funkcje /
                         zagnieżdżenia (obiekty). W obiektach zmienne nazywamy własnościami (properties), a funkcje to
                         metody. <strong>Dot notation</strong> - nazwaObiektu.property - możemy pracować na wybranych
-                        właściwościach obiektu. <strong>Bracket notation</strong> - nazwaObiektu['nazwaWłasności']</li>
+                        właściwościach obiektu. <strong>Bracket notation</strong> - nazwaObiektu[' nazwaWłasności']</li>
                     <li class="notes__text-list-element"><strong>immutability w obiektach - </strong>"constem" są
                         połączenia nazwy obiektu z obiektem, własności obiektu można przepinać!</li>
                     <li class="notes__text-list-element">operatory porównania: == - równe "zwykłe", === - równe,
@@ -282,11 +282,11 @@
                     <li class="notes__text-list-element"><strong>switch(zmienna)</strong>{case x: funkcja; break case
                         y:funkcja; break; default: funkcja;</li>
                     <li class="notes__text-list-element"><strong>addEventListener</strong> - może być na click lub inną
-                        aktywność. ogólny zapis: <strong>element.addEventListener('click', () => {kod})</strong></li>
+                        aktywność. ogólny zapis: <strong>element.addEventListener ('click', () => {kod})</strong></li>
                     <li class="notes__text-list-element"><strong>node.js - </strong>to taki JavaScript który jest
                         uruchamiany poza przeglądarką (nie ma dostępu do DOM). Za jego pomocą możemy testować skrypty
                         bez pisania HTMLa. Komenda w konsoli do uruchomienia plików *.js - "node nazwapliku.js"</li>
-                    <li class="notes__text-list-element"><strong>npm: </strong>zestawy narzędzi potrzebne do konkretnych zadań, gotowe do pobrania. Inicjalizacja - "npm init (-y)", instalowanie paczek "npm install 'nazwa paczki' --save(-dev)" (save do paczek które widać na stronie, save-dev do pazek, których używamy do rozwoju oprogramowania), powstają pliki package.json i package-lock.json, orz katalog "node_modules", gdzie są pliki paczek (jego nie commitować).</li>
+                    <li class="notes__text-list-element"><strong>npm: </strong>zestawy narzędzi potrzebne do konkretnych zadań, gotowe do pobrania. Inicjalizacja - "npm init (-y)", instalowanie paczek "npm install 'nazwa paczki' --save(-dev)" (save do paczek które widać na stronie, save-dev do pazek, których używamy do rozwoju oprogramowania), powstają pliki package.json i package-lock.json, orz katalog "node_modules", gdzie są pliki paczek (jego nie commitować - z reguły zajmuje masę pamięci). Alternatywa dla NPM - YARN. NPX - komenda do korzystania z paczki bez instalacji (w node.js).</li>
                     <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
                     <li class="notes__text-list-element"></li>
