@@ -1,34 +1,40 @@
 .header {
-    &-description {
-      background: white;
-      max-width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 2px solid black;
-      border-radius: 16px;
+  &-description {
+    background: white;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    &__date {
+      font-size: 14px;
+      text-align: right;
+      padding-right: 20px;
+      font-style: italic;
+      color: crimson;
     }
-    &-description__header {
+    &__header {
       color: black;
       text-align: center;
     }
-    &-description__image {
+    &__image {
       border-radius: 16px;
       max-width: 100%;
     }
-    &-description__text {
+    &__text {
       padding: 10px;
       text-align: center;
     }
-    &__title {
-      color: black;
-      text-align: center;
-      font-weight: 900;
-      padding-bottom: 16px;
-      position: relative;
-    }
-    &__title::after {
+  }
+  &__title {
+    color: black;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 16px;
+    position: relative;
+    &::after {
       content: "";
       position: absolute;
       bottom: 0;
@@ -38,3 +44,4 @@
       background: black;
     }
   }
+}

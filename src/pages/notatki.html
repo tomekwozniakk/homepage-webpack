@@ -30,7 +30,11 @@
             <a class="navigation__link" href="kontakt.html">Kontakt</a>
         </nav>
 
-        <h1 class="header__title">Moje notatki z WTF</h1>
+        
+    </header>
+    <main class="main notes">
+        <header class="header main__header--notes">
+            <h1 class="header__title">Moje notatki z WTF</h1>
         <section class="header-description">
             <img class="header-description__image" src="../assets/img/notebook.jpg"
                 alt="Na stole obok laptopa leży notes, a na nim ołówek.">
@@ -39,11 +43,10 @@
                 <p class="header-description__text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
                     postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS. P.S. notatki są chaotyczne, ale
                     zrozumiałe dla mnie 🏇🏇🏇🏇🏇🏇</p>
-                <p class="header__description-text date--js"></p>
+                <p class="header-description__date date--js"></p>
             </div>
         </section>
-    </header>
-    <main class="main notes">
+        </header>
         <section class="notes__text">
             <h2 class="notes__title">
                 <svg class="notes__title-logo" width="390" height="357" viewBox="0 0 390 357" fill="none"
@@ -103,7 +106,7 @@
                         zastępuje walidacji po stronie backendu!</strong></li>
                 <li class="notes__text-list-element"><strong>.gitignore</strong> - umieszczamy tam nazwy plików
                     których nie chcemy dodawać do repo na GitHubie.</li>
-                <li class="notes__text-list-element"></li>
+                <li class="notes__text-list-element"><strong>GIT - branche</strong>: git branch nazwaBrancha - tworzy nowy branch, git checkout nazwaBrancha - przeskakujemy pomiędzy branchami; </li>
                 <li class="notes__text-list-element"></li>
                 <li class="notes__text-list-element"></li>
             </ul>
@@ -179,8 +182,12 @@
                 <li class="notes__text-list-element"><strong>import w css/scss:</strong> @import "żródło". dobra
                     praktyka to stworzyć moduły w scss dla poszczególnych bloków, następnie importować je wszystkie do
                     głównego pliku.</li>
-                <li class="notes__text-list-element"><strong>zmienne w CSS (custom properties)</strong> definiujemy za pomocą selektora :root, :root {--nazwaZmiennej: wartość}, następnie można wywołać gdziekolwiek. Ułatwia pracę, tzn. zmieniamy potem tylko w jednym miejscu, a zmiana obowiązuje wszędzie gdzie użyto zmiennej. Aby zmienić za pomocą JS, należy użyć wyrażenia: document.documentElement.style.setProperty('--nazwaZmiennej', 'wartość').</li>
-                <li class="notes__text-list-element"></li>
+                <li class="notes__text-list-element"><strong>zmienne w CSS (custom properties)</strong> definiujemy za
+                    pomocą selektora :root, :root {--nazwaZmiennej: wartość}, następnie można wywołać gdziekolwiek.
+                    Ułatwia pracę, tzn. zmieniamy potem tylko w jednym miejscu, a zmiana obowiązuje wszędzie gdzie użyto
+                    zmiennej. Aby zmienić za pomocą JS, należy użyć wyrażenia:
+                    document.documentElement .style.setProperty ('--nazwaZmiennej', 'wartość').</li>
+                <li class="notes__text-list-element"><strong>prefixy</strong> - <a href="https://autoprefixer.github.io/" class="link">autoprefixer</a></li>
                 <li class="notes__text-list-element"></li>
             </ul>
         </section>
@@ -270,7 +277,8 @@
                     wykonywanie operacji. Mode - development (dla nas) i production (dla "ludzi 😃"). Możliwości
                     webpacka zwiększamy instalując paczki npm. <strong>Sourcemap</strong> - pozwala na łatwiejszy
                     podgląd żródła kodu (podglądamy plik zrozumiały dla nas a nie ten zrozumiały dla przeglądarki).</li>
-                <li class="notes__text-list-element"><strong>webpack-starterkit</strong> - w katalogu /dist znajdują się pliki przznaczone do publikacji na serwerze.</li>
+                <li class="notes__text-list-element"><strong>webpack-starterkit</strong> - w katalogu /dist znajdują się
+                    pliki przznaczone do publikacji na serwerze.</li>
                 <li class="notes__text-list-element"></li>
                 <li class="notes__text-list-element"></li>
             </ul>
