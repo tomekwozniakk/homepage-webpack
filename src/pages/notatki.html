@@ -23,7 +23,7 @@
 <body>
     <header class="header">
 
-        <button aria-label="open menu" class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
+        <button title="open menu" class="hamburger hamburger--js"><i class="fas fa-bars"></i></button>
         <nav class="navigation navigation--js">
             <a class="navigation__link" href="index.html">Strona główna</a>
             <a class="navigation__link" href="prace-domowe.html">Prace domowe</a>
@@ -141,7 +141,35 @@
                 <li class="notes__text-list-element"><strong>znaczniki w sekcji head</strong> - "title" - tytuł strony;
                     <strong>meta tagi og</strong> - title, description, url, image. Pozwalają wpłynąć na to, co się
                     wyświetla przy wysyłaniu linku np na Facebooku. Image możemy wygenerować przy użyciu <a
-                        href="https://canva.com" class="link">CANVA</a>. Rozdzielczość 1200x630px.</li>
+                        href="https://canva.com" class="link">CANVA</a>. Rozdzielczość 1200x630px. Narzędzie na FB o
+                    nazwie og debug - pozwala na podgląd jak się to nam wyświetli i czy nie ma błędów.</li>
+                <li class="notes__text-list-element">Dostępność: <strong>WAI - web accessibility initiative</strong> -
+                    organizacja w ramach W3C. Publikuje Web Content Accessibility Guidelines <a
+                        href="https://www.w3.org/WAI/WCAG21/quickref/" class="link">(WCAG)</a>. <strong><a
+                            href="http://a11y.com/" class="link">a11y</a></strong> - projekt społecznościowy. Mają <a
+                        href="https://color.a11y.com/Contrast/" class="link">"sprawdzacz kontrastu"</a> - narzędzie do
+                    sprawdzenia czy kontrast na stronie będzie wystarczający. Polska - <a href="http://widzialni.org/"
+                        class="link">Fundacja Widzialni</a> - materiały, szkolenia, audyty. <strong>Zasady pisania
+                        dobrze dostępnych stron:</strong> pisz semantycznie; zadbaj o kontrast; dobrze dobieraj kolory
+                    ==> <a href="http://colorsafe.co/" class="link">colorsafe</a>; unikaj autoplay'a; nie ograniczaj
+                    rzeczy czasowo; nie usuwaj :focus i outline; stosuj alt w obrazkach i kończ opisy kropką; <strong><a
+                            href="https://www.w3.org/WAI/standards-guidelines/aria/" class="link">ARIA - Accessible Rich
+                            Internet Applications</a></strong> - atrybuty pomagające zwiększać dostępność, opisywać
+                    rzeczy, które mogą być problematyczne dla osób niepełnosprawnych (np. aria-label); rozszerzenie do
+                    Chrome'a - CHROMEVOX. </li>
+                <li class="notes__text-list-element"><strong>PWA - Progressive Web Applications</strong> - pozwalają na
+                    twozenie aplikcaji bez konieczności poznawania nowych technologii; łatwa aktualizacja i dystrybucja;
+                    działają offline; technologia rozwijająca się. Dwa podstawowe pliki manifest.json i service
+                    worker.js; generowanie ikon - npm run generate-icons</li>
+                <li class="notes__text-list-element">testowanie na różnych przeglądrkach - np. <a
+                        href="https://browserstack.com" class="link">browserstack</a>. Możemy testować strony na
+                    maszynach wirtualnych - <a href="https://www.virtualbox.org" class="link">virtualbox</a> (nie ma
+                    maców). Koncepcja <strong>Progressive enhancement</strong> - nawet jeśli strona nie wygląda idealnie
+                    na starszych przeglądarkach, to fajnie jeśli będzie można chociaż przeczytać treść. Można użyć
+                    @supports w CSSach (opis w 11.05). Najlepiej na starcie projektu ustalić/zapytać zleceniodawcę jakie
+                    przeglądarki mają być wspierane.</li>
+                <li class="notes__text-list-element"><strong>optymalizacja</strong> - devtools->network; lighthouse - audyt strony; <a href="https://web.dev" class="link">web.dev</a>; mozna skompresowac obrazy <a href="https://tinypng.com" class="link">tinypng</a>; </li>
+                <li class="notes__text-list-element"></li>
                 <li class="notes__text-list-element"></li>
             </ul>
 
@@ -345,6 +373,21 @@
                     wrzucić do local storage - trzeba użyć najpierw operacji <strong>JSON.stringify(object);</strong>
                     analogicznie żeby stinga zmienić z powrotem w obiekt używamy <strong>JSON.parse(string)</strong>
                 </li>
+                <li class="notes__text-list-element"><strong>destrukturyzacja:</strong> pozwala na "wyciąganie" z
+                    obiektów i tablic ich własności(elementy). <strong>spread operator</strong> (np. '...nazwaObiektu)
+                    pozwala na wrzucenie wszystkich własności do innego obiektu (tablicy)</li>
+                <li class="notes__text-list-element"><strong>API - application programming interface</strong>: zestaw
+                    funkcji/narzędzi, pozwala na wykonywanie operacji w aplikacji bez konieczności poznania jej budowy
+                    od środka. Popularnym sposobem konstruowania API jest <strong>REST - Representational State
+                        Transfer</strong>. Ostatnio bardzo popularny również <strong>GraphQL</strong>. Aplikacja
+                    <strong>POSTMAN</strong> pozwala na podglądanie żądań, wysyłanie ich i tworzenie. <a
+                        href="https://github.com/public-apis/public-apis" class="link">Lista publicznych i darmowych
+                        API</a></li>
+                <li class="notes__text-list-element"><strong>Fetch API</strong> - opiera się o mechanizm zwany promise.
+                    <strong>Schemat zapisu - lekcja 11.04.</strong></li>
+
+                <li class="notes__text-list-element"></li>
+                <li class="notes__text-list-element"></li>
                 <li class="notes__text-list-element"></li>
             </ul>
         </section>
