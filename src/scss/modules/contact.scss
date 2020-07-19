@@ -1,6 +1,7 @@
 .contact {
   padding: 0 20px 20px 20px;
   border-radius: 16px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
   background: black;
   display: grid;
   grid-template-columns: 1fr;
@@ -15,6 +16,8 @@
     z-index: 1;
   }
   &__option {
+    background: rgb(27, 27, 27);
+    border-radius: 16px;
     margin: 20px 0;
     color: white;
     transition: .3s linear;

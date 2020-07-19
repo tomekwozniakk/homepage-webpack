@@ -39,7 +39,7 @@
                 <img class="header-description__image" src="../assets/img/notebook.jpg"
                     alt="Na stole obok laptopa leży notes, a na nim ołówek.">
                 <div>
-                    <h2 class="header-description__header">Siema!</h2>
+                    <h2 class="header-description__header">Cześć!</h2>
                     <p class="header-description__text">Tutaj znajdą się notatki. W czasie powtórki ze szkolenia
                         postanowiłem zapisać przydatne rzeczy z podziałem na HTML CSS i JS. P.S. notatki są chaotyczne,
                         ale
@@ -99,19 +99,21 @@
                 </li>
                 <li class="notes__text-list-element"><strong>formularze:</strong> cała składnia => <a
                         href="https://github.com/tomekwozniakk/forms" class="link">FORMS</a>, <strong>wysłanie forma -
-                    </strong>action="url://z-którym-gadamy", bezpieczniejsza i zalecana jest metoda POST,
-                    <strong>enctype</strong> - jeśli wysyłamy pliki, zmieniamy na "multipart/form-data",
+                    </strong><code>action="url://z-którym-gadamy"</code>, bezpieczniejsza i zalecana jest metoda POST,
+                    <strong>enctype</strong> - jeśli wysyłamy pliki,zmieniamy na <code> multipart/form-data</code>,
                     <strong>atrybut required</strong> - pole obowiązkowe, <strong>pattern</strong> - wpisane dane
                     muszą mieć określoną formę (<a href="http://html5pattern.com/Names"
                         class="link">html5pattern.com/Names</a>). <strong>Walidacja po stronie frontendu nie
                         zastępuje walidacji po stronie backendu!</strong></li>
                 <li class="notes__text-list-element"><strong>.gitignore</strong> - umieszczamy tam nazwy plików
                     których nie chcemy dodawać do repo na GitHubie.</li>
-                <li class="notes__text-list-element"><strong>GIT - branche</strong>: git branch nazwaBrancha - tworzy
+                <li class="notes__text-list-element"><strong>GIT - branche</strong>:
+                    <code>git branch nazwaBrancha </code>- tworzy
                     nowy branch, git checkout nazwaBrancha - przeskakujemy pomiędzy branchami; branchy używamy np do
                     testowania nowych funkcji. Żeby wypchnąć nowy branch wpisujemy komendę <strong>git push
-                        --set-upstream origin nazwaBrancha</strong>. Jeśli chcemy dodać zmiany do brancha master -
-                    musimy przejsc na master i użyć komendy <strong>git merge nazwaBrancha</strong>. </li>
+                        <code> --set-upstream origin nazwaBrancha </code></strong>. Jeśli chcemy dodać zmiany do brancha
+                    master -
+                    musimy przejsc na master i użyć komendy <strong><code> git merge nazwaBrancha</code></strong>. </li>
                 <li class="notes__text-list-element"><strong>hiperdivoza i inne choroby 😃</strong> semantyczny HTML =
                     mający znaczenie! <strong>hiperdivoza</strong> - pakowanie wszystkiego w DIVy (nie wiadomo jakie
                     znaczenie semantyczne mają elementy). <strong>Spanownica</strong> - opakowanie wszystkiego w spany,
@@ -138,8 +140,10 @@
                         href="https://codepen.io/" class="link">codepen</a> || <a href="https://tympanus.net/codrops/"
                         class="link">codrops</a> || <a href="https://www.cssdesignawards.com/" class="link">CSS design
                         awards</a> || <a href="https://pdkit.co/" class="link">pdkit</a></li>
-                <li class="notes__text-list-element"><strong>znaczniki w sekcji head</strong> - "title" - tytuł strony;
-                    <strong>meta tagi og</strong> - title, description, url, image. Pozwalają wpłynąć na to, co się
+                <li class="notes__text-list-element"><strong>znaczniki w sekcji head</strong> - <code> "title"</code> -
+                    tytuł strony;
+                    <strong>meta tagi og</strong> - <code> title, description, url, image </code>. Pozwalają wpłynąć na
+                    to, co się
                     wyświetla przy wysyłaniu linku np na Facebooku. Image możemy wygenerować przy użyciu <a
                         href="https://canva.com" class="link">CANVA</a>. Rozdzielczość 1200x630px. Narzędzie na FB o
                     nazwie og debug - pozwala na podgląd jak się to nam wyświetli i czy nie ma błędów.</li>
@@ -160,7 +164,7 @@
                 <li class="notes__text-list-element"><strong>PWA - Progressive Web Applications</strong> - pozwalają na
                     twozenie aplikcaji bez konieczności poznawania nowych technologii; łatwa aktualizacja i dystrybucja;
                     działają offline; technologia rozwijająca się. Dwa podstawowe pliki manifest.json i service
-                    worker.js; generowanie ikon - npm run generate-icons</li>
+                    worker.js; generowanie ikon - <code> npm run generate-icons </code></li>
                 <li class="notes__text-list-element">testowanie na różnych przeglądrkach - np. <a
                         href="https://browserstack.com" class="link">browserstack</a>. Możemy testować strony na
                     maszynach wirtualnych - <a href="https://www.virtualbox.org" class="link">virtualbox</a> (nie ma
@@ -168,8 +172,17 @@
                     na starszych przeglądarkach, to fajnie jeśli będzie można chociaż przeczytać treść. Można użyć
                     @supports w CSSach (opis w 11.05). Najlepiej na starcie projektu ustalić/zapytać zleceniodawcę jakie
                     przeglądarki mają być wspierane.</li>
-                <li class="notes__text-list-element"><strong>optymalizacja</strong> - devtools->network; lighthouse - audyt strony; <a href="https://web.dev" class="link">web.dev</a>; mozna skompresowac obrazy <a href="https://tinypng.com" class="link">tinypng</a>; </li>
-                <li class="notes__text-list-element"></li>
+                <li class="notes__text-list-element"><strong>optymalizacja</strong> - devtools->network; lighthouse -
+                    audyt strony; <a href="https://web.dev" class="link">web.dev</a>; mozna skompresowac obrazy <a
+                        href="https://tinypng.com" class="link">tinypng</a>; wydzielenie krytycznego CSS do sekcji head
+                    <a href="https://web.dev/extract-critical-css" class="link">web.dev/extract-critical-css</a></li>
+                <li class="notes__text-list-element"><strong>multimedia</strong> - wprowadzone w HTML 5. Tag
+                    <strong><code> audio</code></strong> pozwala wstawić plik z dźwiękiem na stronę
+                    <code> controls</code> - wyświetla playera, <code> loop</code> - zapętla. Tag
+                    <strong><code> video</code></strong> - także 'controls' i 'loop'. Standard - pliki .mp4. Oba tagi
+                    mogą być sterowane przy pomocy JS (podstawowy szkielet jak zbudować swojego playera - lekcja 12.02).
+                    <strong>Filmy z youtube</strong> - wrzucamy przy użyciu iframe, na zasadzie kopiowania kodu.</li>
+                <li class="notes__text-list-element"><strong>licencje</strong> - jeśli brak info to zakładajmy że nie można użyć danego zasobu. <a href="https://tldrlegal.com" class="link">tldrlegal</a> - zawiera informacje o typach licencji. <strong>Strony z darmowymi materiałami:</strong> <a href="https://undraw.co" class="link">undraw</a> || <a href="https://flaticon.com" class="link">flaticon</a> || <a href="https://www.drawkit.io/" class="link">drawkit</a> || <a href="https://unsplash.com" class="link">unsplash</a> || <a href="https://pixabay.com/pl/" class="link">pixabay</a> || <a href="https://ccsearch.creativecommons.org/" class="link">ccsearch</a> || </li>
                 <li class="notes__text-list-element"></li>
             </ul>
 
@@ -190,15 +203,18 @@
                 CSS - style
             </h2>
             <ul class="notes__text-list">
-                <li class="notes__text-list-element"><strong>display: inline-block</strong> jak inline, ale można
-                    zmieniać parametry np width i height.</li>
-                <li class="notes__text-list-element"><strong>margin: (x) auto</strong> - "zadziała", czyli
+                <li class="notes__text-list-element"><strong><code> display: inline-block </code></strong> jak inline,
+                    ale można
+                    zmieniać parametry np <code> width i height</code>.</li>
+                <li class="notes__text-list-element"><strong><code> margin: (x) auto</code></strong> - "zadziała", czyli
                     wyśrodkuje, tylko elemety które mają zdefiniowaną szerokość!</li>
-                <li class="notes__text-list-element">przydatna własność - <strong>position:sticky</strong></li>
+                <li class="notes__text-list-element">przydatna własność - <strong><code> position:sticky</code></strong>
+                </li>
                 <li class="notes__text-list-element"><a class="a__link" href="https://caniuse.com/#home">caniuse.com</a>
                 </li>
                 <li class="notes__text-list-element"><strong>float nie służy do budowania layoutu!</strong></li>
-                <li class="notes__text-list-element">clear:both - "czyści" z obu stron, czyli rozszerza "pudełko" do
+                <li class="notes__text-list-element"><code> clear:both</code> - "czyści" z obu stron, czyli rozszerza
+                    "pudełko" do
                     takiej wielkości jakiej jest największy float. Ogólnie float - <strong>rzadko używany (i dobrze
                         bo jest ciulowy).</strong></li>
                 <li class="notes__text-list-element"><strong>BEM: block - </strong>element nadrzędny;
@@ -207,20 +223,27 @@
                     block__element--modifier. Wydzielamy bloki analizując strukturę naszego HTML na stronie. Lepiej
                     nie robić zbyt wielu zagnieżdżeń, żeby nie było zbyt skomplikowanie.</li>
                 <li class="notes__text-list-element"><strong>rekomendowana normalizacja:</strong> normalize.css +
-                    (html {box-sizing: border-box}, *, *:before, *:after {box-sizing:inherit}).</li>
+                    (<code> html {box-sizing: border-box}, *, *:before, *:after {box-sizing:inherit}</code>).</li>
                 <li class="notes__text-list-element"><strong>flex-box</strong> - idealny do wyśrodkowania elementów.
-                    Domyślne wartości flex- : direction - row, wrap - nowrap </li>
-                <li class="notes__text-list-element"><strong>justify-content</strong> - do ustawiania elementów
-                    wzdłuż osi flex-direction, <strong>align-content</strong> - wzdłuż osi przeciwnej. <strong>
-                        Align-self </strong>- align content ale dla pojedynczego elementu. <strong>Order</strong> -
-                    kolejność elementów. <strong>Flex-grow </strong>- proporcje jak element ma rosnąć względem
-                    innych. <strong>Flex-shrink</strong> - to samo ale jak ma się kurczyć. <strong>Flex-basis -
+                    Domyślne wartości <code> flex- : direction - row, wrap - nowrap</code> </li>
+                <li class="notes__text-list-element"><strong><code> justify-content</code></strong> - do ustawiania
+                    elementów
+                    wzdłuż osi flex-direction, <strong><code> align-content</code></strong> - wzdłuż osi przeciwnej.
+                    <strong>
+                        <code> Align-self</code> </strong>- align content ale dla pojedynczego elementu.
+                    <strong><code> Order</code></strong> -
+                    kolejność elementów. <strong><code> Flex-grow</code> </strong>- proporcje jak element ma rosnąć
+                    względem
+                    innych. <strong><code> Flex-shrink</code></strong> - to samo ale jak ma się kurczyć.
+                    <strong><code> Flex-basis </code>-
                     </strong> określenie min.wielkości elementu. </li>
                 <li class="notes__text-list-element"><strong>GRID</strong> - numeracja siatki zaczyna się od 1.
-                    <strong>Przykład:</strong> grid-template-columns: repeat(4, 1fr) 2fr; <strong>minmax(minwartość,
+                    <strong>Przykład:</strong> <code>grid-template-columns: repeat(4, 1fr) 2fr</code>;
+                    <strong>minmax(minwartość,
                         maxwartość);</strong></li>
                 <li class="notes__text-list-element">grid musi się zamykać w regulanych prostokątach.</li>
-                <li class="notes__text-list-element">grid-column: początek/koniec (można wpisać nr, albo nazwę, albo
+                <li class="notes__text-list-element"><code>grid-column</code>: początek/koniec (można wpisać nr, albo
+                    nazwę, albo
                     "span + przez ile elementów ma się rozciągać"; subgrid - dopiero w planach!</li>
                 <li class="notes__text-list-element"><strong>!!!grid a flexbox!!!</strong> - grid do layoutów, flex
                     do pozycjonowania elementów na stronie.</li>
@@ -228,8 +251,9 @@
                     mobilne, potem dodajemy media queries dla większych ekranów. Najpierw definiujemy własności
                     które obowiązują na całej stronie, a potem modyfikujemy te właściwości które mają się zmieniać w
                     miarę zwiększania rozdzielczości. </li>
-                <li class="notes__text-list-element"><strong>pseudoelementy - ::before, ::after - </strong>tworzymy
-                    je za pomocą właściwości 'content: ""'. Używane do upiększania elementów.</li>
+                <li class="notes__text-list-element"><strong>pseudoelementy - <code>::before, ::after</code> -
+                    </strong>tworzymy
+                    je za pomocą właściwości <code>content: ""</code>. Używane do upiększania elementów.</li>
                 <li class="notes__text-list-element"><strong>SASS vs SCSS</strong> - zdaniem Maćka SCSS łatwiejszy,
                     czytelniejszy (opiera się na nawiasach klamrowych, a SASS na wcięciach jak Python). Przydatny link
                     <a href="https://www.sassmeister.com/" class="link">sassmeister.com</a>. <strong>Definiowanie
@@ -245,26 +269,49 @@
                     praktyka to stworzyć moduły w scss dla poszczególnych bloków, następnie importować je wszystkie do
                     głównego pliku.</li>
                 <li class="notes__text-list-element"><strong>zmienne w CSS (custom properties)</strong> definiujemy za
-                    pomocą selektora :root, :root {--nazwaZmiennej: wartość}, następnie można wywołać gdziekolwiek.
+                    pomocą selektora <code>:root, :root {--nazwaZmiennej: wartość}</code>, następnie można wywołać
+                    gdziekolwiek.
                     Ułatwia pracę, tzn. zmieniamy potem tylko w jednym miejscu, a zmiana obowiązuje wszędzie gdzie użyto
                     zmiennej. Aby zmienić za pomocą JS, należy użyć wyrażenia:
-                    document.documentElement .style.setProperty ('--nazwaZmiennej', 'wartość').</li>
+                    <code>document.documentElement .style.setProperty ('--nazwaZmiennej', 'wartość')</code>.</li>
                 <li class="notes__text-list-element"><strong>prefixy</strong> - <a
-                        href="https://autoprefixer.github.io/" class="link">autoprefixer</a></li>
+                        href="https://autoprefixer.github.io/" class="link">autoprefixer</a>. autoprefixer jest
+                    załączony do webpacka.</li>
                 <li class="notes__text-list-element"><strong>Animacje</strong> - dynamikę przejścia określa właściwość
-                    "transition", wartości: name duration timing function delay. Jest też właściwość "will-change" (mało
-                    popularna).<strong> Własność transform</strong> - pozwala w wygodny sposób przekształcać element lub
-                    zmieniać jego położenie. Posiada 3 główne funkcje: <strong>translate</strong> (zmienia położenie
-                    elementu względem osi x,y lub obu), <strong>scale</strong> (zwiększa/zmniejsza element),
-                    <strong>rotate</strong> (obraca element o żądany kąt). <strong>Transform-origin</strong> pozwala
+                    <code> transition</code>, wartości: <code>name duration timing function delay</code>. Jest też
+                    właściwość
+                    "will-change" (mało
+                    popularna).<strong> Własność <code>transform</code></strong> - pozwala w wygodny sposób
+                    przekształcać element lub
+                    zmieniać jego położenie. Posiada 3 główne funkcje: <strong><code>translate</code></strong> (zmienia
+                    położenie
+                    elementu względem osi x,y lub obu), <strong><code>scale</code></strong> (zwiększa/zmniejsza
+                    element),
+                    <strong><code>rotate</code></strong> (obraca element o żądany kąt).
+                    <strong><code>Transform-origin</code></strong> pozwala
                     określić punkt względem którego element będzie transformowany.</li>
-                <li class="notes__text-list-element"><strong>@keyframes</strong> - pozwala napisać animację danego
-                    elementu. Sposób zapisu: <br> @keyframes nazwa <br> {x%/from {właściwość, np transform: wartość}
-                    <br> y%/to {właściwość:wartość}} <br> Posiada różne parametry np. duration, timing-function, delay,
-                    iteration-count, direction, fill-mode, play-state. Wygodne narzędzie do animowania obiektów z
+                <li class="notes__text-list-element"><strong><code>@keyframes</code></strong> - pozwala napisać animację
+                    danego
+                    elementu. Sposób zapisu: <br> <code>@keyframes nazwa <br> {x%/from {właściwość, np transform: wartość}
+                    <br> y%/to {właściwość:wartość}}</code> <br> Posiada różne parametry np. <code>duration, timing-function, delay,
+                        iteration-count, direction, fill-mode, play-state</code>. Wygodne narzędzie do animowania
+                    obiektów z
                     którymi użytkownik nie ma bezpośredniej interakcji.</li>
-                <li class="notes__text-list-element"></li>
-                <li class="notes__text-list-element"></li>
+                <li class="notes__text-list-element"><strong>frameworki CSS: Bootstrap</strong> - zawiera gotowe klasy,
+                    elementy, layouty i pozwala na budowanie stron szybko i bez większej znajomości HTML, CSS itd. Warto
+                    zapoznać się z <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/"
+                        class="link"> dokumentacją </a>. Popularny, lecz odchodzi się od niego.</li>
+                <li class="notes__text-list-element"><strong>frameworki CSS: <a href="https://tailwindcss.com"
+                            class="link"> Tailwind</a></strong> - powstał, żeby nie trzeba było pisać CSSów :) polega na
+                    dodawaniu do elementów HTMLa odpowiednich klas (wielu, wielu klas :)); instalowanie przy pomocy npm
+                    (najpełniej można korzystać z jego zalet) lub CDN. Również warto zajrzeć do dokumentacji.</li>
+                <li class="notes__text-list-element"><strong>selektory ~ + > [] w CSS: '+' - selektor bezpośredniego
+                        rodzeństwa</strong> - element bezpośrednio po danym elemencie, tego samego typu. <strong> '~' -
+                        selektor "ogólnego" rodzeństwa</strong> - działa na każdy element tego samego typu, po danym
+                    elemencie. <strong>'>' - selektor bezpośredniego dziecka</strong> - obejmuje wszystkie bezpośrednie
+                    dzieci danego elementu. <strong>'[ ]' - selektor atrybutów</strong> - pozwala na wybranie elemntów z
+                    określonym atrybutem lub nawet z określoną wartościa danego atrybutu. 3 najważniejsze przypadki: selekcja po fragmencie zawartości: <code>[atrybut*='fragmentWartości']</code>; jeśli element musi zaczynać się od czegoś: <code>[atrybut^='początek']</code>; jeśli ma się kończyć to zamiast ^ - znak $.</li>
+                <li class="notes__text-list-element"> </li>
             </ul>
         </section>
         <section class="notes__text">
@@ -288,61 +335,76 @@
                     wpływać na wszystkie pozostałe elementy strony internetowej. <strong>elementy JS:</strong> wartości,
                     zmienne, operacje
                     porównywania, literały, obiekty, funkcje.</li>
-                <li class="notes__text-list-element"><strong>backtick "`":</strong> `Nazywam się
-                    ${zmienna}.`<strong>zmienna to nie wartość!</strong> Tylko przypisanie już
-                    istniejącej wartości. const - zmienna mająca stałe połączenie z jedną wartością, let - możemy
-                    przepinać połączenie, ale definiujemy tylko raz. <strong>typeof zmienna</strong> - sprawdzamy typ
+                <li class="notes__text-list-element"><strong>backtick "`":</strong> <code>`Nazywam się
+                    ${zmienna}.`</code><strong>zmienna to nie wartość!</strong> Tylko przypisanie już
+                    istniejącej wartości. <code>const</code> - zmienna mająca stałe połączenie z jedną wartością,
+                    <code>let</code> - możemy
+                    przepinać połączenie, ale definiujemy tylko raz. <strong><code>typeof zmienna</code></strong> -
+                    sprawdzamy typ
                     zmiennej. <strong>immutability</strong> - nie możemy zmieniać warości
                     primitive values w JS, jedynie połączenie pomiędzy nimi a zmiennymi.</li>
                 <li class="notes__text-list-element">Szukanie elementu po klasie -
-                    <strong>document.querySelector( ".nazwaKlasy" ).</strong> Dodanie treści do HTML poprzez JS -
-                    <strong>element.innerHTML = `treść`.</strong> </li>
-                <li class="notes__text-list-element"><strong>deklarowanie funkcji: </strong>"function
+                    <strong><code>document.querySelector( ".nazwaKlasy" )</code>.</strong> Dodanie treści do HTML
+                    poprzez JS -
+                    <strong><code>element.innerHTML = `treść`</code>.</strong> </li>
+                <li class="notes__text-list-element"><strong>deklarowanie funkcji: </strong><code>function
                     nazwaFunkcji(argument/y) {ciało funkcji - tu przypisujemy argumenty, deklarujemy co funkcja ma
-                    robić/zwracać}. Następnie funkcję wywołujemy wpisując jej nazwę i w nawiasie określamy
+                    robić/zwracać}</code> . Następnie funkcję wywołujemy wpisując jej nazwę i w nawiasie określamy
                     argumenty. <strong>Zalety</strong> - nie powtarzamy kodu (DRY), lepsza czytelność/przejrzystość,
                     łatwiej szukać błędów, odpowiedzialność za wykonanie zadania w jednym miejscu.</li>
                 <li class="notes__text-list-element"><strong>funkcja strzałkowa - </strong>łatwiejszy(?) sposób
-                    zapisu deklaracji funkcji: "const funkcja = (argumenty) => {ciało funkcji}"; nie jest
+                    zapisu deklaracji funkcji: <code>const funkcja = (argumenty) => {ciało funkcji}</code>; nie jest
                     zamiennikiem tradycyjnego zapisu (nie tworzy kontekstu THIS, nie ma dostępu do ARGUMENTS i
                     SUPER. Zazwyczaj nie zobaczysz różnicy.</li>
-                <li class="notes__text-list-element"><strong>obiekt w JS</strong> - const obiekt = {key: value,
-                    key2: value,} key - unikalny w ramach obiektu - value - mogą to być prymitywy / funkcje /
+                <li class="notes__text-list-element"><strong>obiekt w JS</strong> - <code>const obiekt = {key: value,
+                    key2: value,}</code> <code>key</code> - unikalny w ramach obiektu - <code> value</code> - mogą to
+                    być prymitywy / funkcje /
                     zagnieżdżenia (obiekty). W obiektach zmienne nazywamy własnościami (properties), a funkcje to
-                    metody. <strong>Dot notation</strong> - nazwaObiektu.property - możemy pracować na wybranych
-                    właściwościach obiektu. <strong>Bracket notation</strong> - nazwaObiektu[' nazwaWłasności']</li>
+                    metody. <strong>Dot notation</strong> - <code>nazwaObiektu.property</code> - możemy pracować na
+                    wybranych
+                    właściwościach obiektu. <strong>Bracket notation</strong> -
+                    <code>nazwaObiektu[' nazwaWłasności']</code></li>
                 <li class="notes__text-list-element"><strong>immutability w obiektach - </strong>"constem" są
                     połączenia nazwy obiektu z obiektem, własności obiektu można przepinać!</li>
                 <li class="notes__text-list-element">operatory porównania: == - równe "zwykłe", === - równe,
                     sprawdza typeof, != - różne, !== - różne, sprawdza typeof, </li>
-                <li class="notes__text-list-element"><strong>if('wyrażenie logiczne') {'wykonaj ten kod jeśli
-                        true'}, if(warunek)&&(warunek)</strong> - oba muszą być true, <strong>
-                        if(warunek)||(warunek)</strong> - OR (wystarczy że jeden jest true), </li>
-                <li class="notes__text-list-element">if(warunek) {wykonaj kod jeśli true) else {wykonaj kod
+                <li class="notes__text-list-element"><strong><code>if('wyrażenie logiczne') {'wykonaj ten kod jeśli
+                    true'}, if(warunek)&&(warunek)</code></strong> - oba muszą być true, <strong>
+                        <code>if(warunek)||(warunek)</code></strong> - OR (wystarczy że jeden jest true), </li>
+                <li class="notes__text-list-element"><code>if(warunek) {wykonaj kod jeśli true) else {wykonaj kod
                     jeśli
                     false}, if(){} else if
-                    (){} else() {} (jeśli pierwszy true, to pomija resztę, itd.)</li>
+                    (){} else() {} (jeśli pierwszy true, to pomija resztę, itd.)</code></li>
                 <li class="notes__text-list-element">! - not (odwraca
                     wartość wyrażenia logicznego),</li>
-                <li class="notes__text-list-element"><strong>switch(zmienna)</strong>{case x: funkcja; break case
-                    y:funkcja; break; default: funkcja;</li>
+                <li class="notes__text-list-element"><strong><code>switch(zmienna)</code></strong><code>{case x: funkcja; break case
+                    y:funkcja; break; default: funkcja;</code></li>
                 <li class="notes__text-list-element"><strong>addEventListener</strong> - może być na click lub inną
-                    aktywność. ogólny zapis: <strong>element .addEventListener ('click', () => {kod})</strong></li>
+                    aktywność. ogólny zapis:
+                    <strong><code>element .addEventListener ('click', () => {kod})</code></strong></li>
                 <li class="notes__text-list-element"><strong>node.js - </strong>to taki JavaScript który jest
                     uruchamiany poza przeglądarką (nie ma dostępu do DOM). Za jego pomocą możemy testować skrypty
-                    bez pisania HTMLa. Komenda w konsoli do uruchomienia plików *.js - "node nazwapliku.js"</li>
+                    bez pisania HTMLa. Komenda w konsoli do uruchomienia plików *.js - <code>node nazwapliku.js</code>
+                </li>
                 <li class="notes__text-list-element"><strong>npm: </strong>zestawy narzędzi potrzebne do konkretnych
-                    zadań, gotowe do pobrania. Inicjalizacja - "npm init (-y)", instalowanie paczek "npm install 'nazwa
-                    paczki' --save(-dev)" (save do paczek które widać na stronie, save-dev do pazek, których używamy do
-                    rozwoju oprogramowania), powstają pliki package.json i package-lock.json, orz katalog
-                    "node_modules", gdzie są pliki paczek (jego nie commitować - z reguły zajmuje masę pamięci).
+                    zadań, gotowe do pobrania. Inicjalizacja - <code>npm init (-y)</code>, instalowanie paczek <code>npm install 'nazwa
+                        paczki' --save(-dev)</code> (save do paczek które widać na stronie, save-dev do pazek, których
+                    używamy do
+                    rozwoju oprogramowania), powstają pliki <code>package.json</code> i <code>package-lock.json</code>,
+                    oraz katalog
+                    <code>node_modules</code>, gdzie są pliki paczek (jego nie commitować - z reguły zajmuje masę
+                    pamięci).
                     Alternatywa dla NPM - YARN. NPX - komenda do korzystania z paczki bez instalacji (w node.js).
-                    Skrypty npm - można definiować w pliku package.json w pozycji "scripts".</li>
+                    Skrypty npm - można definiować w pliku <code>package.json</code> w pozycji <code>scripts</code>.
+                </li>
                 <li class="notes__text-list-element"><strong>import/export w JS - </strong>CommonJS (głównie do node.js)
-                    oraz ES6 Modules. W pliku z funkcją wpisujemy "export + nazwa funkcji", potem definiujemy funkcję. W
-                    pliku gdzie funkcję wykonujemy - wpisujemy "import (nazwa funkcji) from 'ścieżka'". W taki sposób
-                    można importować też zmienne. <strong> "export default" </strong>pozwala przy imporcie nazwać
-                    element importowany tak, jak chcemy (inny sposób - "import nazwa1 as nazwa2").</li>
+                    oraz ES6 Modules. W pliku z funkcją wpisujemy <code>export + nazwa funkcji</code>, potem definiujemy
+                    funkcję. W
+                    pliku gdzie funkcję wykonujemy - wpisujemy <code>import (nazwa funkcji) from 'ścieżka'</code>. W
+                    taki sposób
+                    można importować też zmienne. <strong> <code>export default</code> </strong>pozwala przy imporcie
+                    nazwać
+                    element importowany tak, jak chcemy (inny sposób - <code>import nazwa1 as nazwa2</code> ).</li>
                 <li class="notes__text-list-element"><strong><a href="https://webpack.js.org/"
                             class="link">WEBPACK</a></strong> - pozwala na łatwe i szybkie "ogarnięcie" 😆 projektu.
                     Podajemy swoje pliki jako input, a Webpack "wypluwa" pliki zminifikowane i zrozumiałe dla
@@ -351,30 +413,35 @@
                     wykonywanie operacji. Mode - development (dla nas) i production (dla "ludzi 😃"). Możliwości
                     webpacka zwiększamy instalując paczki npm. <strong>Sourcemap</strong> - pozwala na łatwiejszy
                     podgląd żródła kodu (podglądamy plik zrozumiały dla nas a nie ten zrozumiały dla przeglądarki).</li>
-                <li class="notes__text-list-element"><strong>webpack-starterkit</strong> - w katalogu /dist znajdują się
+                <li class="notes__text-list-element"><strong>webpack-starterkit</strong> - w katalogu <code>/dist</code>
+                    znajdują się
                     pliki przznaczone do publikacji na serwerze.</li>
                 <li class="notes__text-list-element"><strong>tablice</strong> indeksujemy od zera. Pobieranie elementu z
-                    tablicy: tablica[index]. Operacje na tablicach: spr. długości tablicy - tablica.length, dodanie
-                    elementu - tablica.push(element), dodanie elementu na początku - tablica.unshift(element), usunięcie
-                    elementu z początku - tablica.shift(), z końca - tablica.pop(), sprawdzenie czy mamy element w
-                    tablicy - tablica.indexOf(element), usuwanie n elementów z tablicy - tablica.splice(index, n),
-                    pobieranie n elementów od danej pozycji - tablica.slice(index, stop) </li>
+                    tablicy: <code>tablica[index]</code>. Operacje na tablicach: spr. długości tablicy -
+                    <code>tablica.length</code>, dodanie
+                    elementu - <code>tablica.push(element)</code>, dodanie elementu na początku -
+                    <code>tablica.unshift(element)</code>, usunięcie
+                    elementu z początku - <code>tablica.shift()</code>, z końca - <code>tablica.pop()</code>,
+                    sprawdzenie czy mamy element w
+                    tablicy - <code>tablica.indexOf(element)</code>, usuwanie n elementów z tablicy -
+                    <code>tablica.splice(index, n)</code>,
+                    pobieranie n elementów od danej pozycji - <code>tablica.slice(index, stop)</code> </li>
                 <li class="notes__text-list-element"><strong>pętle</strong> - do wykonywania powtarzających się bloków
-                    kodu. Podstawowa pętla - <strong>for (inicjalizacja; warunek stop; wyrażenie inkrementacji)
-                        {kod}</strong>,
-                    najczęściej używamy "i" jako licznika pętli. i++, i-- : postinkrementacja, postdekrementacja; ++i,
-                    --i - preinkrementacja, predekrementacja.</li>
-                <li class="notes__text-list-element"><strong>Pętla while - while (war. logiczny) {kod}, pętla do
-                        while</strong> - do {kod} while (warunek); pierwszy blok kodu wykona się zawsze. <strong>Pętla
-                        for .. in</strong> - for (let propertyName in object) {kod}, <strong>pętla for..of</strong> -
-                    for (element of tablica) {kod}. </li>
-                <li class="notes__text-list-element"><strong>local storage</strong> - localStorage.setitem('nazwa',
-                    'wartość') lub analogicznie - removeItem jeśli chcemy usunąć; obiektów nie możemy bezpośrednio
-                    wrzucić do local storage - trzeba użyć najpierw operacji <strong>JSON.stringify(object);</strong>
-                    analogicznie żeby stinga zmienić z powrotem w obiekt używamy <strong>JSON.parse(string)</strong>
+                    kodu. Podstawowa pętla - <strong><code>for (inicjalizacja; warunek stop; wyrażenie inkrementacji)
+                        {kod}</code></strong>,
+                    najczęściej używamy "i" jako licznika pętli. <code>i++, i--</code> : postinkrementacja,
+                    postdekrementacja; <code>++i, --i</code> - preinkrementacja, predekrementacja.</li>
+                <li class="notes__text-list-element"><strong>Pętla while - <code>while (war. logiczny) {kod}, pętla do
+                    while</strong> - do {kod} while (warunek)</code>; pierwszy blok kodu wykona się zawsze. <strong>Pętla
+                        for .. in</strong> - <code>for (let propertyName in object) {kod}</code>, <strong>pętla for..of</strong> -
+                    <code>for (element of tablica) {kod}</code>. </li>
+                <li class="notes__text-list-element"><strong>local storage</strong> - <code>localStorage.setitem('nazwa',
+                    'wartość')</code> lub analogicznie - <code>removeItem</code> jeśli chcemy usunąć; obiektów nie możemy bezpośrednio
+                    wrzucić do local storage - trzeba użyć najpierw operacji <strong><code>JSON.stringify(object)</code>;</strong>
+                    analogicznie żeby stringa zmienić z powrotem w obiekt używamy <strong><code>JSON.parse(string)</code></strong>
                 </li>
                 <li class="notes__text-list-element"><strong>destrukturyzacja:</strong> pozwala na "wyciąganie" z
-                    obiektów i tablic ich własności(elementy). <strong>spread operator</strong> (np. '...nazwaObiektu)
+                    obiektów i tablic ich własności(elementy). <strong>spread operator</strong> (np. <code>...nazwaObiektu</code> )
                     pozwala na wrzucenie wszystkich własności do innego obiektu (tablicy)</li>
                 <li class="notes__text-list-element"><strong>API - application programming interface</strong>: zestaw
                     funkcji/narzędzi, pozwala na wykonywanie operacji w aplikacji bez konieczności poznania jej budowy

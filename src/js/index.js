@@ -61,6 +61,22 @@ const age = "34";
 // bottle.pour('glass');
 // bottle.pour('bucket(!)');
 
+// szablon fetch API 
+// fetch("https://api.github.com/users/tomekwozniakk/repos")
+// .then(resp => resp.json())
+// .then(resp => {
+//   for (let repo of resp) {
+//     const {name, html_url} = repo;
+//     const repositoryList = document.querySelector(".list--js");
+//     const myTemplate = `<li>
+// ${name} <a href="${html_url}" title="link do repozytorium ${name} na Githubie">link do githuba</a>
+// </li>`;
+//     repositoryList.innerHTML += myTemplate;
+//   }
+// })
+// .catch(eror => {
+//   console.log("these are not the repos you are lookin' for")
+// })
 
 const hamburger = document.querySelector('.hamburger--js');
 

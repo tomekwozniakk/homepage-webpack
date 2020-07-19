@@ -110,7 +110,7 @@ a {
       grid-column: 1/4;
     }
     &__option {
-      border: 2px solid white;
+      border:1px solid black;
       border-radius: 16px;
       &-header {
         padding: 10px 0;
@@ -122,7 +122,9 @@ a {
         }
       }
       &:hover {
-        background: rgb(27, 27, 27);
+        background: black;
+        border:1px solid rgb(27, 27, 27);
+        box-shadow: 3px 3px 6px rgba(27, 27, 27, 0.9);
         & .contact__option-header::after {
           background: rgb(218, 71, 103);
           left: 20%;
