@@ -96,8 +96,10 @@ a {
     margin: 0 auto;
     &-description {
       flex-direction: row;
+      border-radius: 16px;
       &__image {
         max-width: 60%;
+        border-radius: 16px 0 0 16px;
       }
     }
     &__title {
@@ -107,6 +109,7 @@ a {
 
   .contact {
     grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 16px;
     &__header {
       grid-column: 1/4;
     }
@@ -129,5 +132,9 @@ a {
           left: 20%;
       }}
     }
+  }
+
+  .week-summary {
+    border-radius: 16px;
   }
 }
