@@ -21,21 +21,21 @@
       left: -15%;
       width: 130%;
       height: 2px;
-      background: navy;;
+      background: black;;
       z-index: 1;
     }
     &__comment {
       &-heading {
         font-size: 24px;
-        color: navy;
+        color: #403B36;
         text-align: center;
       }
       &--list {
         padding: 20px 30px;
-        border-radius: 16px;
+        border-radius: 8px;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
         color: white;
-        background: rgb(43, 43, 43);
+        background: #403B36;
       }
     }
   }

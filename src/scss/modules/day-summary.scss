@@ -1,14 +1,14 @@
 .day-summary {
     text-align: left;
     &__title {
-        color: navy;
+        color: #403B36;
         text-align: center;
       }
       &__description--special, &__description--list {
         color: white;
-        background: rgb(43, 43, 43);
+        background: #403B36;
         padding: 20px 30px;
-        border-radius: 16px;
+        border-radius: 8px;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
       }
   }
